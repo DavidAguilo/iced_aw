@@ -2,8 +2,8 @@
 name = "iced_aw"
 version = "0.11.0"
 authors = [
-    "Kaiden42 <gitlab@tinysn.com>",
-    "Andrew Wheeler <genusistimelord@gmail.com>",
+	"Kaiden42 <gitlab@tinysn.com>",
+	"Andrew Wheeler <genusistimelord@gmail.com>",
 ]
 edition = "2021"
 description = "Additional widgets for the Iced GUI library"
@@ -22,7 +22,7 @@ date_picker = ["chrono"]
 color_picker = ["iced/canvas"]
 cupertino = ["time", "iced/canvas"]
 grid = ["itertools"]
-glow = []                                                   # TODO
+glow = []                                                  # TODO
 tab_bar = []
 tabs = ["tab_bar"]
 time_picker = ["chrono", "iced/canvas"]
@@ -39,24 +39,24 @@ drop_down = []
 sidebar = []
 
 default = [
-    "badge",
-    "card",
-    "number_input",
-    "date_picker",
-    "color_picker",
-    "grid",
-    "tab_bar",
-    "tabs",
-    "time_picker",
-    "slide_bar",
-    "wrap",
-    "selection_list",
-    "quad",
-    "context_menu",
-    "spinner",
-    "drop_down",
-    "menu",
-    "sidebar",
+	"badge",
+	"card",
+	"number_input",
+	"date_picker",
+	"color_picker",
+	"grid",
+	"tab_bar",
+	"tabs",
+	"time_picker",
+	"slide_bar",
+	"wrap",
+	"selection_list",
+	"quad",
+	"context_menu",
+	"spinner",
+	"drop_down",
+	"menu",
+	"sidebar",
 ]
 
 [dependencies]
@@ -71,7 +71,8 @@ iced_fonts = "0.1.1"
 [dependencies.iced]
 #git = "https://github.com/iced-rs/iced.git"
 #rev = "b474a2b7a763dcde6a377cb409001a7b5285ee8d"
-version = "0.13.1"
+git = "https://github.com/DavidAguilo/iced.git"
+branch = "v0.13.1"
 default-features = false
 features = ["advanced"]
 
@@ -79,13 +80,14 @@ features = ["advanced"]
 opt-level = 2
 
 [dev-dependencies]
-num-traits = "0.2.19"   # For widget_id_return example
-rand = "0.8.5"            # For wrap example
+num-traits = "0.2.19" # For widget_id_return example
+rand = "0.8.5"        # For wrap example
 
 [dev-dependencies.iced]
 #git = "https://github.com/iced-rs/iced.git"
 #rev = "b474a2b7a763dcde6a377cb409001a7b5285ee8d"
-version = "0.13.0"
+git = "https://github.com/DavidAguilo/iced.git"
+branch = "v0.13.1"
 #default-features = false
 features = ["advanced", "wgpu"]
 
